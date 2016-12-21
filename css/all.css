@@ -1,0 +1,252 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+html,body{
+font-family:"Oswald","Microsoft JhengHei","Heiti TC" ;	
+margin:0px;
+padding:0px;
+-webkit-overflow-scrolling: touch; 
+overflow-x:hidden;
+	}
+a,a:hover,a:focus,a:active{
+	outline:none;
+	}	
+header{
+position:fixed;
+width:100%;
+padding:10px;
+top:0px;
+left:0px;
+background:rgba(255,255,255,0.8);
+z-index:100;	
+	}	
+.menu{
+padding:0px;
+margin:0px;
+list-style:none;
+float:right;
+margin-right:20px;	
+margin-top:5px;
+	}
+.menu li{
+display:inline-block;
+padding:0px 20px;
+font-size:13px;
+letter-spacing:2px;	
+	}	
+.menu li a{
+display:block;
+color:#444;	
+	}
+.menu li a:hover,.menu li a:focus{
+color:#888;	
+text-decoration:none;
+	}			
+.logo{
+margin-left:10px;	
+	}
+.logo img{
+width:100px;
+	}
+.area{
+background-size:cover;
+background-size:cover;
+background-position:center center;
+background-attachment:fixed;
+background-repeat:no-repeat;
+padding:250px 100px;
+text-shadow:1px 1px 0px #000;	
+position:relative;
+	}	
+.area h1{
+font-size:40px;	
+color:#fff;	
+-webkit-animation-duration: 2s;
+animation-duration: 2s;
+-webkit-animation-name: sildeIn;
+animation-name: sildeIn;
+letter-spacing:1px;
+	}	
+.area h2{
+font-size:20px;	
+line-height:30px;
+color:#fff;	
+margin-top:10px;
+	}	
+.num{
+position:absolute;
+top:-40px;
+right:20px;	
+font-size:120px;
+color:rgba(255,255,255,0.5);
+text-shadow:none;
+font-family:"Roboto Condensed";
+border-bottom:3px solid #2abaab;
+	}	
+#about{
+background-image:url(../images/bg2.jpg);
+
+	}	
+#feature{
+background-image:url(../images/bg1.jpg);
+	}	
+#item{
+background-image:url(../images/bg3.jpg);
+	}				
+#phone{
+width:250px;
+height:347px;
+background:url(../images/phone.png) no-repeat;
+background-size:cover;
+position:fixed;
+bottom:0px;
+left:20%;	
+-webkit-animation-duration: 2s;
+animation-duration: 2s;
+-webkit-animation-name: sildeIn;
+animation-name: sildeIn;
+text-align:center;
+overflow:hidden;
+	}
+#phone img{
+width:219px;	
+margin-top:58px;
+margin-left:3px;
+	}
+footer{
+padding:60px 20px;
+text-align:center;
+background-image:url(../images/bg4.jpg);
+background-attachment:fixed;	
+background-repeat:no-repeat;
+background-size:cover;
+	}
+footer h1{
+color:#fff;
+margin-bottom:30px;
+font-size:30px;	
+	}	
+footer img{
+width:90px;
+transition:all ease-in .2s;	
+box-shadow:0px 0px 10px #323D4A;
+	}	
+footer img:hover{
+transform:scale(1.1,1.1);
+	}	
+.copyright{
+height:25px;
+line-height:25px;
+color:#fff;
+text-align:center;
+background:#252E38;
+font-size:12px;	
+font-family:"Roboto Condensed";	
+letter-spacing:1px;
+	}				
+@-webkit-keyframes sildeIn{
+  0% {
+    margin-bottom: -50px;
+	opacity:0;
+  }
+
+  100% {
+    margin-bottom: 0px;
+	opacity:1;
+  }
+}
+
+@keyframes sildeIn {
+  0% {
+    margin-bottom: -50px;
+	opacity:0;
+  }
+
+  100% {
+    margin-bottom: 0px;
+	opacity:1;
+  }
+}	
+@media (max-width: 1200px) {
+.area h1{
+font-size:35px;	
+	}	
+.area h2{
+font-size:20px;	
+line-height:28px;
+	}	
+.num{
+right:30px;	
+font-size:100px;
+	}	
+}
+@media (max-width: 1024px) {
+.area{
+background-attachment: initial;	
+	}	
+}
+@media (max-width: 992px) {
+.area{
+padding:130px 100px;	
+	}	
+.area h1{
+font-size:29px;	
+	}	
+.area h2{
+font-size:16px;	
+line-height:25px;
+	}	
+#phone{
+left:7%;
+width:350px;
+height:485px;
+	}
+#phone img{
+margin-top:80px;
+width:307px;
+height:437px;
+	}			
+footer{
+background-attachment: initial;		
+	}					
+}
+@media (max-width: 767px) {
+	#phone{
+	display:none;	
+		}
+	.area{
+	padding:100px 30px 50px 30px;	
+		}	
+	#about{
+	padding-top:130px;	
+		}	
+	.num{
+	right:-10px;
+	top:-13px;	
+	font-size:70px;
+		}			
+}
+@media (max-width: 480px) {
+	header{
+	padding:0px;		
+		}
+	.logo{
+	display:block;
+	text-align:center;
+	margin:10px 0px;
+		}	
+	ul.menu{
+	display:block;
+	width:100%;
+	float:none;	
+	margin-right:0px;
+	background:#fff;
+		}
+	ul.menu li{
+	width:32%;
+	padding:10px 0px;
+	text-align:center;
+		}
+}
+@media (max-width: 380px) {
+}
+
